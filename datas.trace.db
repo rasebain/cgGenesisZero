@@ -1,0 +1,88 @@
+05-03 16:45:53 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "TABLE" が見つかりません
+Table "TABLE" not found; SQL statement:
+delete table  test [42102-171]
+05-03 16:47:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data [42001-171]
+05-03 16:47:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INT,NAME STRING,PASS STRING) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INT,NAME STRING,PASS STRING) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id int,name String,pass String) [42001-171]
+05-03 16:47:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INT,NAME VARCHAR,PASS VARCHAR) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INT,NAME VARCHAR,PASS VARCHAR) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id int,name varChar,pass varchar) [42001-171]
+05-03 16:52:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INT,
+USER_NAME VARCHAR,
+PASS VARCHAR) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INT,
+USER_NAME VARCHAR,
+PASS VARCHAR) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id int,
+user_name varChar,
+pass varchar) [42001-171]
+05-03 16:53:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INT) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INT) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id int) [42001-171]
+05-03 16:53:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INTEGER) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INTEGER) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id integer) [42001-171]
+05-03 16:53:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(USER_ID INT,USER_NAME VARCHAR,PASSWORD USER_NAME) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(USER_ID INT,USER_NAME VARCHAR,PASSWORD USER_NAME) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(user_id int,user_name varChar,password user_name) [42001-171]
+05-03 16:54:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(USER_ID INT,USER_NAME VARCHAR) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(USER_ID INT,USER_NAME VARCHAR) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(user_id int,user_name varChar) [42001-171]
+05-03 16:54:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(USER_ID INT) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(USER_ID INT) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(user_id int) [42001-171]
+05-03 16:54:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(USER_ID INTEGER) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(USER_ID INTEGER) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(user_id integer) [42001-171]
+05-03 16:54:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(PLAYER ID INTEGER) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(PLAYER ID INTEGER) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(player id integer) [42001-171]
+05-03 16:54:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(PLAYER_ID INTEGER) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(PLAYER_ID INTEGER) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(player_id integer) [42001-171]
+05-03 16:54:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INTEGER) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INTEGER) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id integer) [42001-171]
+05-03 16:54:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CRATE[*] TABLE USER_DATA(ID INT) "; 期待されるステートメント "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "CRATE[*] TABLE USER_DATA(ID INT) "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+crate table user_data(id int) [42001-171]
+05-03 16:57:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "wiz" が見つかりません
+Column "wiz" not found; SQL statement:
+insert into user_data values(0,"wiz","19881004") [42122-171]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:141)
+	at org.h2.command.dml.Insert.prepare(Insert.java:231)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:417)
+	at org.h2.engine.Session.prepareCommand(Session.java:366)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:164)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:152)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1312)
+	at org.h2.server.web.WebApp.query(WebApp.java:1002)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:965)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:954)
+	at org.h2.server.web.WebThread.process(WebThread.java:166)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.lang.Thread.run(Unknown Source)
